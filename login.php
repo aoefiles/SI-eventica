@@ -100,7 +100,7 @@
         <div class="container">
             <div class="login-container">
                 
-                <h2><a href="index.php" class="btn-add"><i class="fa-solid fa-arrow-left"></i></a> Welcome back, User!</h2><br>
+                <h2><a href="index.php" class="btn-add"><i class="fa-solid fa-arrow-left"></i></a> Selamat datang kembali, Gensoed!</h2><br>
                 <?php 
                 if(isset($_GET['message'])){
                     if($_GET['message'] == "failure"){
@@ -121,7 +121,7 @@
                     <input type="text" name="username" required>
                     <span>Password</span>
                     <input type="password" name="password" required>
-                    <span>Don't have an account? <a href="register.php">Click here</a></span>
+                    <span>Belum memiliki akun?<a href="register.php"> Daftar sekarang di sini!</a></span>
                     <br><input type="submit" name="submit">
                 </form>
             </div>
