@@ -2,9 +2,9 @@
 session_start();
 include('connection.php');
 
- if($_SESSION['level'] == ""){
-     header('Location:login.php?message=session');
- }
+if($_SESSION['level'] == ""){
+    header('Location:login.php?message=session');
+}
 
 $query = "SELECT * FROM tbl_konten ORDER BY id_konten DESC";
 $result = mysqli_query($conn, $query);
@@ -32,12 +32,19 @@ $checkQuery = mysqli_query($conn, $check);
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <title>Hackathon</title>
+        <title>Dashboard Eventica</title>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
             nav{width: initial;padding: 26px 40px;left: initial;right: 0;}
             body{background-color: rgb(31, 31, 31);}
+
+            .sidebar.sidebar-content.logoeventica{
+                height: 45px;
+                padding: 0px 8px 0px 0px;
+            }
+
+            .dashboard-section{background-color: rgb(45, 86, 82);}
             .dashboard-content h2 span{
                 font-size: 15px;
                 font-weight: 400;
@@ -71,13 +78,17 @@ $checkQuery = mysqli_query($conn, $check);
                 background-color: #333;
                 border-radius: 2px;
             }
+            .sidebar{
+                background-color: #0C2C47;
+            }
         </style>
     </head>
     <body>
         <div class="sidebar">
             <div class="sidebar-content">
-                <a href="index.php"><h2>Gamadhikari</h2></a>
+                <a href="index.php"><h2>Eventica Home</h2></a>
                 <ul>
+                <img class="logo" id="logoeventica" src="assets\images\logo eventica.png">
                     <a onclick="userProfile();" id="sidebarProfile" class="active"><li><i class="fa-solid fa-user"></i> Profil</li></a>
                     <a onclick="changePassword();" id="sidebarPassword"><li><i class="fa-solid fa-lock"></i> Ubah Kata Sandi</li></a>
                     <?php if($_SESSION['level'] == "Administrator"){?>
@@ -92,7 +103,7 @@ $checkQuery = mysqli_query($conn, $check);
                         if(mysqli_num_rows($query) > 0){
                         }else{ 
                             echo "<a onclick='insertCommitte();' id='sidebarInsertCommitte'><li><i class='fa-solid fa-user'></i> Daftar Kepanitiaan</li></a>";
-                         }
+                        }
                     } else{ ?>
                     <a onclick="insertCommitte();" id="sidebarInsertCommitte"><li><i class="fa-solid fa-user"></i> Daftar Kepanitiaan</li></a>
                     <?php } 
@@ -298,7 +309,7 @@ $checkQuery = mysqli_query($conn, $check);
                                     </td>
                                 </tr>
                             <?php
-                             }
+                            }
                             ?>
                     </table>
                 </div>
@@ -335,7 +346,7 @@ $checkQuery = mysqli_query($conn, $check);
                                         }?></td>
                                 </tr>
                             <?php
-                             }
+                            }
                             ?>
                     </table>
                 </div>
