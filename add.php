@@ -22,7 +22,6 @@ if(isset($_POST['submit'])){
     <body>
         <div class="container">
             <div class="login-container">
-                
                 <h2><a href="index.php" class="btn-add"><i class="fa-solid fa-arrow-left"></i></a> Add Content!</h2><br>
                 <form name="update-form" action="<?php $_SERVER['PHP_SELF'];?>" method="POST" class="login-form" >
                     <span>Content Title</span>
