@@ -40,13 +40,13 @@ $checkQuery = mysqli_query($conn, $check);
         <nav>
             <ul>
             <a href="index.php" class="navbar-left">
-                <li><img class="logo" id="logo" src="assets/images/logo.png"></li>
-                <li><h4>Gamadhikari</h4></li>
+                <li><img class="logo" id="logo" src="assets/images/eventica.png"></li>
+                <li><h4>EVENTICA</h4></li>
             </a>
             </ul>
             <ul>
                 <a href="#hero-section"><li>Beranda</li></a>
-                <a href="#program-section"><li>Program Kerja</li></a>
+                <a href="#program-section"><li>Acara</li></a>
                 <a href="#article-section"><li>Artikel</li></a>
                 <a href="#"><li>Kepanitiaan</li></a>
                 <?php if(isset($_SESSION['username'])){
@@ -58,8 +58,8 @@ $checkQuery = mysqli_query($conn, $check);
         </nav>
         <div class="hero-section" id="hero-section">
             <div class="content">
-                <h1><em>Gama</em>dhikari</h1>
-                <p class="type">Suatu kabinet pada organisasi kemahasiswaan jurusan Informatika di Fakultas Teknik yang terintegrasi dengan Universitas Jenderal Soedirman.</p><br>
+                <h1>EVENTICA</h1>
+                <p class="type">Pusat informasi acara dan platform kontribusi dalam kegiatan di Universitas Jenderal Soedirman</p><br>
                 <a href="#program-section" class="btn-learn">Selengkapnya</a>
             </div>
         </div>
@@ -67,10 +67,10 @@ $checkQuery = mysqli_query($conn, $check);
             <div class="floating-content">
                 <div class="floating-items">
                     <ul>
-                        <li><img src="assets/images/logo.png" class="floating-image" alt="Jujutsu Kaisen Highschool"></li>
-                        <li><p>Satu Informatika untuk satu Indonesia.</p></li>
+                        <li><img src="assets/images/eventica.png" class="floating-image" alt="Jujutsu Kaisen Highschool"></li>
+                        <li><p>Ide Tumbuh, Momen Terwujud</p></li>
                     </ul>
-                    <a href="watch.php" class="button-floating">Selengkapnya</a>
+                    <a href="https://blog.bem-unsoed.com/" class="button-floating">Selengkapnya</a>
                 </div>
             </div>
         </div>
@@ -79,15 +79,15 @@ $checkQuery = mysqli_query($conn, $check);
         <div class="program-section" id="program-section">
             <div class="program-content" id="program-section">
                 <div class="program-items">
-                    <h2>Gamadhikari <span> Himpunan Mahasiswa Informatika</span></h2>
+                    <h2>EVENTICA <span> Informasi Acara, Kolaborasi, dan Aktivitas Kampus</span></h2>
                     <div class="item">
                         <ul>
-                            <li><img src="assets/images/logo.png" class="logo" alt="Logo Gamadhikari"></li>
+                            <li><img src="assets/images/eventica.png" class="logo" alt="Logo EVENTICA"></li>
                             <li>
-                                <h2>Himpunan Mahasiswa Informatika <em>(HMIF)</em></h2>
-                                <p>Himpunan Mahasiswa Informatika Universitas Jenderal Soedirman adalah organisasi kemahasiswaan dilingkungan jurusan Informatika Fakultas Teknik Universitas Jenderal Soedirman yang merupakan bagian integral dari rakyat Indonesia.</p>
-                                <p>Memiliki visi dalam mewujudkan mahasiswa yang bertakwa kepada Tuhan Yang Maha Esa, berwawasan luas, cendekia bermoral, berintefritas, berpikir kritis, berpribadian baik, bertanggung jawab serta berkepedulian sosial untuk terciptanya kehidupan kampus yang ilmiah dan bermanfaat dalam satu kesatuan organisasi yang terstruktur.</p><br>
-                                <a href="https://hmifunsoed.or.id/" class="btn-learn">Selengkapnya</a>
+                                <h2>EVENTICA</h2>
+                                <p>Eventica adalah sebuah platform yang menghubungkan berbagai informasi mengenai acara dan kegiatan di Universitas Jenderal Soedirman hingga kesempatan untuk berpartisipasi di dalamnya.</p>
+                                <p>Dengan tujuan untuk mendorong kolaborasi, Eventica mempermudah setiap individu untuk ikut serta dan berkontribusi dalam berbagai acara, seperti kegiatan unjuk minat dan bakat. Sebagai sumber utama informasi acara, Eventica menawarkan peluang bagi siapa saja yang ingin lebih terlibat dalam setiap momen penting di kampus, menjadikan setiap acara lebih berarti.</p><br>
+                                <a href="https://blog.bem-unsoed.com/" class="btn-learn">Selengkapnya</a>
                             </li>
                         </ul>
                     </div>
@@ -96,8 +96,8 @@ $checkQuery = mysqli_query($conn, $check);
                         <div class="divide-item">
                             <div class="divide-content">
                                 <a href="#">
-                                    <h2><span>Program Kerja</span>Soedirman Technophoria</h2>
-                                    <img src="assets/images/soedirmantechnophoria.png" alt="Soedirman Technophoria">
+                                    <h2><span>Acara</span>Soedirman Student Summit</h2>
+                                    <img src="assets/images/S3.png" alt="Soedirman Student Summit">
                                     <a href="" class="btn-program">Daftar</a>
                                 </a>
                             </div>
@@ -105,8 +105,8 @@ $checkQuery = mysqli_query($conn, $check);
                         <div class="divide-item">
                             <div class="divide-content">
                                 <a href="#">
-                                <h2><span>Program Kerja</span>Lustrum Informatics 3.0</h2>
-                                <img src="assets/images/lustrum.png" alt="Soedirman Technophoria">
+                                <h2><span>Acara</span>Pekan Olahraga Soedirman</h2>
+                                <img src="assets/images/porsoed.png" alt="Pekan Olahraga Soedirman">
                                 <a href="" class="btn-program">Daftar</a>
                                 </a>
                             </div>
@@ -114,8 +114,8 @@ $checkQuery = mysqli_query($conn, $check);
                         <div class="divide-item">
                             <div class="divide-content">
                                 <a href="#">
-                                <h2><span>Program Kerja</span>Informatics Championship</h2>
-                                <img src="assets/images/informaticschampionship.png" alt="Soedirman Technophoria">
+                                <h2><span>Acara</span>Soedirman Art Festival</h2>
+                                <img src="assets/images/starfest.png" alt="Soedirman Art Festival">
                                 <a href="" class="btn-program">Daftar</a>
                                 </a>
                             </div>
@@ -128,7 +128,7 @@ $checkQuery = mysqli_query($conn, $check);
         <div class="article-section" id="article-section">
             <div class="article-content">
                 <div class="article-items">
-                    <h2><a href="article.php" style="text-decoration:none;color:white">Article </a><span> Himpunan Mahasiswa Informatika</span></h2>
+                    <h2><a href="article.php" style="text-decoration:none;color:white">Article </a><span> EVENTICA</span></h2>
                     <div class="article-list">
                         <?php 
                         $count = 0;
@@ -158,7 +158,7 @@ $checkQuery = mysqli_query($conn, $check);
             </div>
         </div>
         <div class="footer">
-            &copy; Himpunan Mahasiswa Informatika. All rights reserved.
+            &copy; EVENTICA. All rights reserved.
         </div>
         <script src="https://kit.fontawesome.com/d9b2e6872d.js" crossorigin="anonymous"></script>
     </body>
